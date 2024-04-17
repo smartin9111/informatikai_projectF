@@ -18,7 +18,7 @@ return new class extends Migration
             $table->decimal('labor_fee', total: 19, places: 4);
             $table->date('start_date');
             $table->date('completion_date');
-            $table->bigInteger('owner_id');
+            $table->bigInteger('user_id');
             $table->bigInteger('vehicle_id');
             $table->timestamps();
         });

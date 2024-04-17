@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('manufacturer');
             $table->string('type');
             $table->year('year');
-            $table->bigInteger('owner_id');
+            $table->bigInteger('user_id');
             $table->timestamps();
         });
     }

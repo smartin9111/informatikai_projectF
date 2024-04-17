@@ -10,8 +10,8 @@ class Vehicle extends Model
 {
     use HasFactory;
 
-    public function owner(): BelongsTo
+    public function user(): BelongsTo
     {
-        return $this->belongsTo(Owner::class);
+        return $this->belongsTo(User::class);
     }
 }
