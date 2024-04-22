@@ -16,6 +16,11 @@ class Offer extends Model
         return $this->belongsTo(User::class);
     }
 
+    public function vehicle(): BelongsTo
+    {
+        return $this->belongsTo(Vehicle::class);
+    }
+
     public function parts(): BelongsToMany
     {
         return $this->belongsToMany(Part::class)->withPivot('quantity');

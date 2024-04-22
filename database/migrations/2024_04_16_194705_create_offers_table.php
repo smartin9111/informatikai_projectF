@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('offers', function (Blueprint $table) {
             $table->id();
-            $table->string('fault_description');
-            $table->unsignedSmallInteger('repair_time')->comment('in days');
+            $table->text('fault_description');
+            $table->unsignedSmallInteger('repair_time')->nullable()->comment('in days');
             $table->decimal('labor_fee', total: 19, places: 4);
-            $table->date('start_date');
-            $table->date('completion_date');
+            $table->date('start_date')->nullable();
+            $table->date('completion_date')->nullable();
             $table->bigInteger('user_id');
             $table->bigInteger('vehicle_id');
             $table->timestamps();
