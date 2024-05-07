@@ -20,7 +20,7 @@
     <link href="{{ asset('frontend/assets/css/owl.css') }}" rel="stylesheet">
     <link href="{{ asset('frontend/assets/css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('frontend/assets/css/jquery.fancybox.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('frontend/assets/css/animate.css"') }}" rel="stylesheet">
+    <link href="{{ asset('frontend/assets/css/animate.css') }}" rel="stylesheet">
     <link href="{{ asset('frontend/assets/css/jquery-ui.css') }}" rel="stylesheet">
     <link href="{{ asset('frontend/assets/css/nice-select.css') }}" rel="stylesheet">
     <link href="{{ asset('frontend/assets/css/color/theme-color.css') }}" id="jssDefault" rel="stylesheet">
