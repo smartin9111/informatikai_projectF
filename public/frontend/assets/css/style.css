@@ -1,5 +1,5 @@
  
-/* Css For Realshed */
+
 
 /************ TABLE OF CONTENTS ***************
 1. Fonts
@@ -581,6 +581,7 @@ img {
 .main-header{
   position:relative;
   left:0px;
+  background: #111111;
   top:0px;
   z-index:999;
   width:100%;
@@ -3724,11 +3725,12 @@ div#mCSB_1_container{
 /** header-style-two **/
 
 .header-style-two{
+background-color: #222;
   position: absolute;
   left: 0px;
   top: 0px;
   width: 100%;
-  background: transparent;
+
 }
 
 .header-style-two .header-lower .main-menu .navigation > li > a{
