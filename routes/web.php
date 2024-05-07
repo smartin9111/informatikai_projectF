@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('frontend/frontend_dashboard');
+    return view('frontend/index');
 });
 
 Route::get('/debug', [DebugController::class, 'index'])->name('debug');
