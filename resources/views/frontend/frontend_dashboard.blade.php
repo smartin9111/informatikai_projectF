@@ -90,10 +90,9 @@
                             <nav class="main-menu navbar-expand-md navbar-light">
                                 <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                     <ul class="navigation clearfix">
-                                        <li><a href="contact.html"><span>Fő oldal</span></a></li>
+                                        <li><a href="/"><span>Fő oldal</span></a></li>
 
 
-                                        <li><a href="contact.html"><span>Kapcsolat</span></a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -151,8 +150,8 @@
                     <div class="image-layer" style="background-image:url(assets/images/banner/banner-2.jpg)"></div>
                     <div class="auto-container">
                         <div class="content-box">
-                            <h2>Search Properties for Sale and To Rent</h2>
-                            <p>Amet consectetur adipisicing elit sed do eiusmod.</p>
+                            <h2>Profi szolgáltatások, megfizethető áron, garanciával!</h2>
+                            <p>Tapasztalt szakemberek, kedvező árak, megbízható garancia.</p>
                         </div>
                     </div>
                 </div>
@@ -160,8 +159,8 @@
                     <div class="image-layer" style="background-image:url(assets/images/banner/banner-3.jpg)"></div>
                     <div class="auto-container">
                         <div class="content-box">
-                            <h2>Search Properties for Sale and To Rent</h2>
-                            <p>Amet consectetur adipisicing elit sed do eiusmod.</p>
+                            <h2>Gyors és hatékony javítások, nálunk időt spórol!</h2>
+                            <p>Villámgyors javítások, időtálló eredmények, kényelem.</p>
                         </div>
                     </div>
                 </div>
@@ -169,8 +168,8 @@
                     <div class="image-layer" style="background-image:url(assets/images/banner/banner-4.jpg)"></div>
                     <div class="auto-container">
                         <div class="content-box">
-                            <h2>Search Properties for Sale and To Rent</h2>
-                            <p>Amet consectetur adipisicing elit sed do eiusmod.</p>
+                            <h2>Kényelem és bizalom, autója jó kezekben lesz!</h2>
+                            <p>Kényelmes, megbízható és szakszerű szolgáltatások.</p>
                         </div>
                     </div>
                 </div>
@@ -184,10 +183,10 @@
         <section class="news-section sec-pad">
             <div class="auto-container">
                 <div class="sec-title centred">
-                    <h5>News & Article</h5>
-                    <h2>Stay Update With Realshed</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing sed do eiusmod tempor incididunt <br />labore
-                        dolore magna aliqua enim.</p>
+                    <h5>Szakértői tanácsok</h5>
+                    <h2>Tekintse meg szakértőink nyilatkozatait</h2>
+                    <p>A Car Servicre számíthatok mindig! Kiváló szakértelem, barátságos kiszolgálás, és az autóm mindig
+                        tökéletesen működik utánuk!</p>
                 </div>
                 <div class="row clearfix">
                     <div class="col-lg-4 col-md-6 col-sm-12 news-block">
@@ -197,24 +196,23 @@
                                 <div class="image-box">
                                     <figure class="image"><a href="blog-details.html"><img
                                                 src="assets/images/news/news-1.jpg" alt=""></a></figure>
-                                    <span class="category">Featured</span>
+                                    <span class="category">Kiemelt</span>
                                 </div>
                                 <div class="lower-content">
-                                    <h4><a href="blog-details.html">Including Animation In Your Design System</a></h4>
+                                    <h4><a href="blog-details.html">A Kipufogórendszer Javítása</a></h4>
                                     <ul class="post-info clearfix">
                                         <li class="author-box">
                                             <figure class="author-thumb"><img src="assets/images/news/author-1.jpg"
                                                     alt=""></figure>
-                                            <h5><a href="blog-details.html">Eva Green</a></h5>
+                                            <h5><a href="blog-details.html">Kovács Péter</a></h5>
                                         </li>
-                                        <li>April 10, 2020</li>
+                                        <li>2023. március 15.</li>
                                     </ul>
                                     <div class="text">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing sed.</p>
+                                        <p>A kipufogórendszer hiba jelét a kocsiból kifújó furcsa hangok jelezhetik.
+                                            Fontos az időbeni beavatkozás, hogy a probléma ne súlyosbodjon.</p>
                                     </div>
-                                    <div class="btn-box">
-                                        <a href="blog-details.html" class="theme-btn btn-two">See Details</a>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -226,25 +224,23 @@
                                 <div class="image-box">
                                     <figure class="image"><a href="blog-details.html"><img
                                                 src="assets/images/news/news-2.jpg" alt=""></a></figure>
-                                    <span class="category">Featured</span>
+                                    <span class="category">Kiemelt</span>
                                 </div>
                                 <div class="lower-content">
-                                    <h4><a href="blog-details.html">Taking The Pattern Library To The Next Level</a>
-                                    </h4>
+                                    <h4><a href="blog-details.html">A Motorolaj Csere Fontossága</a></h4>
                                     <ul class="post-info clearfix">
                                         <li class="author-box">
                                             <figure class="author-thumb"><img src="assets/images/news/author-2.jpg"
                                                     alt=""></figure>
-                                            <h5><a href="blog-details.html">George Clooney</a></h5>
+                                            <h5><a href="blog-details.html">Nagy Gábor</a></h5>
                                         </li>
-                                        <li>April 09, 2020</li>
+                                        <li>2023. március 20.</li>
                                     </ul>
                                     <div class="text">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing sed.</p>
+                                        <p>A motorolaj időbeni cseréje és megfelelő szinten tartása hozzájárul az autó
+                                            hosszú élettartamához és optimális működéséhez.</p>
                                     </div>
-                                    <div class="btn-box">
-                                        <a href="blog-details.html" class="theme-btn btn-two">See Details</a>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -256,30 +252,30 @@
                                 <div class="image-box">
                                     <figure class="image"><a href="blog-details.html"><img
                                                 src="assets/images/news/news-3.jpg" alt=""></a></figure>
-                                    <span class="category">Featured</span>
+                                    <span class="category">Kiemelt</span>
                                 </div>
                                 <div class="lower-content">
-                                    <h4><a href="blog-details.html">How New Font Technologies Will Improve The Web</a>
-                                    </h4>
+                                    <h4><a href="blog-details.html">A Fékek Javításának Fontossága</a></h4>
                                     <ul class="post-info clearfix">
                                         <li class="author-box">
                                             <figure class="author-thumb"><img src="assets/images/news/author-3.jpg"
                                                     alt=""></figure>
-                                            <h5><a href="blog-details.html">Simon Baker</a></h5>
+                                            <h5><a href="blog-details.html">Kiss Tamás</a></h5>
                                         </li>
-                                        <li>April 28, 2020</li>
+                                        <li>2023. április 5.</li>
                                     </ul>
                                     <div class="text">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing sed.</p>
+                                        <p>A jó állapotú fékek nélkülözhetetlenek a biztonságos vezetéshez. Rendszeres
+                                            ellenőrzésük és karbantartásuk alapvető feladat.</p>
                                     </div>
-                                    <div class="btn-box">
-                                        <a href="blog-details.html" class="theme-btn btn-two">See Details</a>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
             </div>
         </section>
         <!-- news-section end -->
