@@ -6,6 +6,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdminVehiclesController;
 use App\Http\Controllers\AdminPartsController;
+use App\Http\Controllers\AdminOffersController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -47,6 +48,8 @@ Route::middleware('auth','role:admin')->group(function () {
     Route::get('/admin/parts/editParts/{id?}', [AdminPartsController::class, 'edit'])->name('admin.parts.editParts');
     Route::post('/admin/parts/editParts/{id?}', [AdminPartsController::class, 'upsert']);
     Route::get('/admin/parts/deleteParts/{id}', [AdminPartsController::class, 'delete']);
+    Route::get('/admin/offers', [AdminOffersController::class, 'index'])->name('admin.offers');
+    Route::get('/admin/offers/edit/{id?}', [AdminOffersController::class, 'edit'])->name('admin.offers.edit');
 });
 
 // user middleware

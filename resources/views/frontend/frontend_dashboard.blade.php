@@ -27,6 +27,7 @@
     <link href="{{ asset('frontend/assets/css/switcher-style.css') }}" rel="stylesheet">
     <link href="{{ asset('frontend/assets/css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('frontend/assets/css/responsive.css') }}" rel="stylesheet">
+    <link href="{{ asset('frontend/assets/css/multi-select.css') }}" rel="stylesheet">
 
 
 </head>
@@ -66,9 +67,11 @@
         <script src="{{ asset('frontend/assets/js/jquery-ui.js') }}"></script>
         <script src="{{ asset('frontend/assets/js/jquery.paroller.min.js') }}"></script>
         <script src="{{ asset('frontend/assets/js/nav-tool.js') }}"></script>
+        <script src="{{ asset('frontend/assets/js/jquery.multi-select.js') }}"></script>
 
         <!-- main-js -->
         <script src="{{ asset('frontend/assets/js/script.js') }}"></script>
+        <script src="{{ asset('frontend/assets/js/addons.js') }}"></script>
 
 </body><!-- End of .page_wrapper -->
 

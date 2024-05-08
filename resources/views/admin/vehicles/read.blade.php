@@ -4,7 +4,7 @@
     <div class="container mt-8">
         <h2 class="text-center mt-8">Járművek</h2>
         <div class="d-flex justify-content-between py-4">
-            <input type="text" class="table-filter form-control col-2" placeholder="Szűrés" data-target="#vehicles-table">
+            <input type="text" class="filter-input form-control col-2" placeholder="Szűrés" data-target="#vehicles-table" data-items="tbody tr">
             <button class="btn btn-secondary" onclick="window.location.href='/admin/vehicles/edit/'">Új jármű</button>
         </div>
         <table class="table table-striped" id="vehicles-table">

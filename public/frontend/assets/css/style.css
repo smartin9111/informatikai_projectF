@@ -9828,3 +9828,7 @@ background-color: #222;
 .search-field .top-search .search-btn button i{
   margin-right: 8px;
 }
+
+div.ms-container {
+  width: initial;
+}
