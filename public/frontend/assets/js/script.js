@@ -627,6 +627,20 @@
 	    });
 	};
 
+	// Table filter
+	if ($('input.table-filter').length) {
+		$('input.table-filter').on('keyup', function() {
+			const target = $($(this).data('target'));
+			if (!target.length) {
+				return;
+			}
+			const term = $(this).val().toLowerCase();
+			target.find('tbody tr').filter(function() {
+				$(this).toggle($(this).text().toLowerCase().indexOf(term) > -1)
+			});
+		});
+	}
+
 
 	/*	=========================================================================
 	When document is Scrollig, do
