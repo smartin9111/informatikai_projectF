@@ -4,8 +4,11 @@
     <section style="margin-top: 130px;">
     <div class="container mt-8">
         <h2 class="text-center mt-8">Alkatrészek</h2>
-        <button class="btn btn-secondary" onclick="window.location.href='/admin/parts/editParts/'">Új alkatrész</button>
-        <table class="table table-striped">
+        <div class="d-flex justify-content-between py-4">
+            <input type="text" class="table-filter form-control col-2" placeholder="Szűrés" data-target="#parts-table">
+            <button class="btn btn-secondary" onclick="window.location.href='/admin/parts/editParts/'">Új alkatrész</button>
+        </div>
+        <table class="table table-striped" id="parts-table">
             <thead>
                 <tr>
                     <th>Név</th>

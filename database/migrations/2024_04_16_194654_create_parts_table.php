@@ -17,8 +17,8 @@ return new class extends Migration
             $table->string('manufacturer');
             $table->string('type');
             $table->unsignedSmallInteger('delivery_time')->comment('in days');
-            $table->decimal('purchase_price', total: 19, places: 4);
-            $table->decimal('sell_price', total: 19, places: 4);
+            $table->decimal('purchase_price', total: 19, places: 2);
+            $table->decimal('sell_price', total: 19, places: 2);
             $table->timestamps();
         });
     }
