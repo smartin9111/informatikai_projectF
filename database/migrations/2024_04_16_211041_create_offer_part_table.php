@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('offer_part', function (Blueprint $table) {
             $table->bigInteger('offer_id');
             $table->bigInteger('part_id');
-            $table->integer('quantity');
+            $table->integer('quantity')->default(1);
         });
     }
 

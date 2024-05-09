@@ -7,6 +7,8 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdminVehiclesController;
 use App\Http\Controllers\AdminPartsController;
 use App\Http\Controllers\AdminOffersController;
+use App\Http\Controllers\AdminWorksheetsController;
+use App\Http\Controllers\AdminInvoicesController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -49,7 +51,16 @@ Route::middleware('auth','role:admin')->group(function () {
     Route::post('/admin/parts/editParts/{id?}', [AdminPartsController::class, 'upsert']);
     Route::get('/admin/parts/deleteParts/{id}', [AdminPartsController::class, 'delete']);
     Route::get('/admin/offers', [AdminOffersController::class, 'index'])->name('admin.offers');
+    Route::post('/admin/offers/new', [AdminOffersController::class, 'new']);
     Route::get('/admin/offers/edit/{id?}', [AdminOffersController::class, 'edit'])->name('admin.offers.edit');
+    Route::post('/admin/offers/edit/{id?}', [AdminOffersController::class, 'upsert']);
+    Route::get('/admin/offers/delete/{id}', [AdminOffersController::class, 'delete']);
+    Route::post('/admin/offers/to-worksheet/{id}', [AdminOffersController::class, 'toWorksheet']);
+    Route::get('/admin/worksheets', [AdminWorksheetsController::class, 'index'])->name('admin.worksheets');
+    Route::get('/admin/worksheets/view/{id}', [AdminWorksheetsController::class, 'view']);
+    Route::post('/admin/worksheets/to-invoice/{id}', [AdminWorksheetsController::class, 'toInvoice']);
+    Route::get('/admin/invoices', [AdminInvoicesController::class, 'index'])->name('admin.invoices');
+    Route::get('/admin/invoices/view/{id}', [AdminInvoicesController::class, 'view']);
 });
 
 // user middleware

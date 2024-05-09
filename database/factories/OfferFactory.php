@@ -35,7 +35,7 @@ class OfferFactory extends Factory
             'start_date' => $startDate,
             'completion_date' => $completionDate,
             'user_id' => $user->id,
-            'vehicle_id' => $user->vehicles->random(),
+            'vehicle_id' => $user->vehicles?->random(),
         ];
     }
 }

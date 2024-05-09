@@ -11,6 +11,13 @@ class Offer extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'fault_description',
+        'repair_time',
+        'labor_fee',
+        'vehicle_id',
+    ];
+
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
