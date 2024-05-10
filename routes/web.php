@@ -9,6 +9,7 @@ use App\Http\Controllers\AdminPartsController;
 use App\Http\Controllers\AdminOffersController;
 use App\Http\Controllers\AdminWorksheetsController;
 use App\Http\Controllers\AdminInvoicesController;
+use App\Http\Controllers\AdminPartnersController;
 use App\Http\Controllers\UserVehiclesController;
 use App\Http\Controllers\UserOffersController;
 use App\Http\Controllers\UserInvoicesController;
@@ -64,6 +65,10 @@ Route::middleware('auth','role:admin')->group(function () {
     Route::post('/admin/worksheets/to-invoice/{id}', [AdminWorksheetsController::class, 'toInvoice']);
     Route::get('/admin/invoices', [AdminInvoicesController::class, 'index'])->name('admin.invoices');
     Route::get('/admin/invoices/view/{id}', [AdminInvoicesController::class, 'view']);
+    Route::get('/admin/partners', [AdminPartnersController::class, 'index'])->name('admin.partners');
+    Route::get('/admin/partners/edit/{id?}', [AdminPartnersController::class, 'edit'])->name('admin.partners.edit');
+    Route::post('/admin/partners/edit/{id?}', [AdminPartnersController::class, 'upsert']);
+    Route::get('/admin/partners/delete/{id}', [AdminPartnersController::class, 'delete']);
 });
 
 // user middleware

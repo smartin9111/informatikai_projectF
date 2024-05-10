@@ -33,7 +33,7 @@ class AuthenticatedSessionController extends Controller
 		if($request->user()->role=== 'admin'){
 			$url = '/admin/vehicles';
 		}elseif($request->user()->role=== 'user'){
-			$url = 'user';
+			$url = 'invoices';
 		}
 
         return redirect()->intended($url);

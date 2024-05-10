@@ -55,6 +55,7 @@
                                           <!-- Bejelentkezett felhasználóknak megjelenített menüelemek -->
                                           @if (Auth::user()->role == 'admin')
                                               <!-- Admin specifikus menüelemek -->
+                                              <li><a href="{{ route('admin.partners') }}"><span>Partnerek</span></a></li>
                                               <li><a href="{{ route('admin.vehicles') }}"><span>Járművek</span></a></li>
                                               <li><a href="{{ route('admin.parts') }}"><span>Alkatrészek</span></a></li>
                                               <li><a href="{{ route('admin.offers') }}"><span>Ajánlatok</span></a></li>
@@ -82,6 +83,10 @@
                           @guest
                               <div class="sign-box">
                                   <a href="{{ route('login') }}"><i class="fas fa-user"></i>Bejelentkezés</a>
+                              </div>
+                          @else
+                              <div class="sign-box">
+                                  <span><i class="fas fa-user pr-3"></i>{{ Auth::user()->name }}</span>
                               </div>
                           @endguest
                       </div>
