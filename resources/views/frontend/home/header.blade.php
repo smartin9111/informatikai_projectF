@@ -61,6 +61,7 @@
                                               <li><a href="{{ route('admin.offers') }}"><span>Ajánlatok</span></a></li>
                                               <li><a href="{{ route('admin.worksheets') }}"><span>Munkalapok</span></a></li>
                                               <li><a href="{{ route('admin.invoices') }}"><span>Számlák</span></a></li>
+                                              <li><a href="{{ route('admin.dashboard') }}"><span>Riportok</span></a></li>
                                           @elseif (Auth::user()->role == 'user')
                                               <!-- Sima felhasználóknak megjelenített menüelemek -->
                                               <li><a href="{{ route('user.vehicles') }}"><span>Járművek</span></a></li>
