@@ -48,10 +48,10 @@
                                   <ul class="navigation clearfix">
                                       @guest
                                           <!-- Látogatóknak megjelenített menüelemek -->
-                                          <li><a href="/"><span>Fő oldal</span></a></li>
+                                          <li><a href="/"><span>Főoldal</span></a></li>
                                           <li><a href="{{ route('register') }}"><span>Regisztráció</span></a></li>
                                       @else
-                                          <li><a href="/"><span>Fő oldal</span></a></li>
+                                          <li><a href="/"><span>Főoldal</span></a></li>
                                           <!-- Bejelentkezett felhasználóknak megjelenített menüelemek -->
                                           @if (Auth::user()->role == 'admin')
                                               <!-- Admin specifikus menüelemek -->
@@ -62,9 +62,9 @@
                                               <li><a href="{{ route('admin.invoices') }}"><span>Számlák</span></a></li>
                                           @elseif (Auth::user()->role == 'user')
                                               <!-- Sima felhasználóknak megjelenített menüelemek -->
-                                              <li><a href="{{ route('profile') }}"><span>Profil</span></a></li>
-                                              <li><a href="{{ route('orders') }}"><span>Rendelések</span></a></li>
-                                              <li><a href="{{ route('support') }}"><span>Támogatás</span></a></li>
+                                              <li><a href="{{ route('user.vehicles') }}"><span>Járművek</span></a></li>
+                                              <li><a href="{{ route('user.offers') }}"><span>Árajánlatok</span></a></li>
+                                              <li><a href="{{ route('user.invoices') }}"><span>Számlák</span></a></li>
                                           @endif
                                           <li><a href="{{ route('logout') }}"
                                                   onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><span>Kijelentkezés</span></a>

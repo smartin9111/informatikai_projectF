@@ -9,6 +9,9 @@ use App\Http\Controllers\AdminPartsController;
 use App\Http\Controllers\AdminOffersController;
 use App\Http\Controllers\AdminWorksheetsController;
 use App\Http\Controllers\AdminInvoicesController;
+use App\Http\Controllers\UserVehiclesController;
+use App\Http\Controllers\UserOffersController;
+use App\Http\Controllers\UserInvoicesController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -66,6 +69,16 @@ Route::middleware('auth','role:admin')->group(function () {
 // user middleware
 Route::middleware('auth','role:user')->group(function () {
     Route::get('/user', [UserController::class, 'UserIndex'])->name('user.index');
+    Route::get('/vehicles', [UserVehiclesController::class, 'index'])->name('user.vehicles');
+    Route::get('/vehicles/edit/{id?}', [UserVehiclesController::class, 'edit'])->name('user.vehicles.edit');
+    Route::post('/vehicles/edit/{id?}', [UserVehiclesController::class, 'upsert']);
+    Route::get('/vehicles/delete/{id}', [UserVehiclesController::class, 'delete']);
+    Route::get('/offers', [UserOffersController::class, 'index'])->name('user.offers');
+    Route::get('/offers/edit/{id?}', [UserOffersController::class, 'edit'])->name('user.offers.edit');
+    Route::post('/offers/edit/{id?}', [UserOffersController::class, 'upsert']);
+    Route::get('/offers/delete/{id}', [UserOffersController::class, 'delete']);
+    Route::get('/invoices', [UserInvoicesController::class, 'index'])->name('user.invoices');
+    Route::get('/invoices/view/{id}', [UserInvoicesController::class, 'view']);
 });
 
 

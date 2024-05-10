@@ -6,13 +6,9 @@
         <form class="my-5">
             @csrf
             <div class="form-group">
-                <label for="user">Tulajdonos</label>
-                <input type="text" class="form-control" name="user" value="{{ $invoice->user->name }}" disabled>
-            </div>
-            <div class="form-group">
                 <label for="user">Jármű</label>
                 <input type="text" class="form-control" name="vehicle" 
-                    value="{{ $invoice->vehicle->manufacturer }} {{ $invoice->vehicle->type }} ({{ $invoice->vehicle->year }}) [{{ $invoice->vehicle->license_plate }}]" 
+                    value="{{ $invoice->vehicle?->manufacturer }} {{ $invoice->vehicle?->type }} ({{ $invoice->vehicle?->year }}) [{{ $invoice->vehicle?->license_plate }}]" 
                     disabled>
             </div>
             <div class="form-group">
