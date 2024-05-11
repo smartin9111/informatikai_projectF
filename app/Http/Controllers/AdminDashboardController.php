@@ -19,8 +19,6 @@ class AdminDashboardController extends Controller
             $labor_fee[] = $offer->labor_fee;
             $vehicle_id[] = $offer->vehicle_id;
         }
-
-        // Le kell kérned a partnerek adatait
         $partners = User::all();
 
         return view('admin.dashboard.dashboard', [
